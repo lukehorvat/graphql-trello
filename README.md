@@ -12,4 +12,43 @@ $ npm install graphql-trello
 
 ## Usage
 
-TODO.
+Example:
+
+```javascript
+import graphqlTrello from "graphql-trello";
+
+let query = `
+  query($boardId: String!) {
+    getBoard(boardId: $boardId) {
+      id
+      name
+      lists {
+        id
+        name
+        cards {
+          id
+          name
+        }
+      }
+      members {
+        id
+        username
+      }
+    }
+  }
+`;
+
+graphqlTrello({
+  query,
+  variables: { boardId: "TRELLO_BOARD_ID" },
+  key: "TRELLO_KEY",
+  token: "TRELLO_TOKEN",
+}).then(data => {
+  let board = data.getBoard;
+  console.log(board);
+}).catch(error => {
+  console.error(error);
+});
+```
+
+See the [examples](examples) directory for more!
