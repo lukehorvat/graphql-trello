@@ -10,7 +10,10 @@
     "build": "node_modules/.bin/babel lib -d dist -q",
     "prebuild": "node_modules/.bin/rimraf dist",
     "prepublish": "npm run build",
-    "example-get-board": "node_modules/.bin/babel-node examples/get-board"
+    "example-get-board": "node_modules/.bin/babel-node examples/get-board",
+    "example-get-list": "node_modules/.bin/babel-node examples/get-list",
+    "example-get-card": "node_modules/.bin/babel-node examples/get-card",
+    "example-get-member": "node_modules/.bin/babel-node examples/get-member"
   },
   "dependencies": {
     "bluebird": "3.4.7",
