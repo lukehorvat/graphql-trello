@@ -52,3 +52,12 @@ graphqlTrello({
 ```
 
 See the [examples](examples) directory for more!
+
+## Related
+
+Check out my other Trello packages:
+
+- [create-trello-webhook](https://github.com/lukehorvat/create-trello-webhook)
+- [delete-trello-webhook](https://github.com/lukehorvat/delete-trello-webhook)
+- [verify-trello-webhook](https://github.com/lukehorvat/verify-trello-webhook)
+- [get-trello-board](https://github.com/lukehorvat/get-trello-board)
