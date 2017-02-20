@@ -28,6 +28,10 @@ let query = `
         cards {
           id
           name
+          comments {
+            id
+            content
+          }
         }
       }
       members {

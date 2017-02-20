@@ -12,10 +12,13 @@ let query = /* GraphQL */`
         name
         url
         updatedAt
-        comments
         labels {
           name
           color
+        }
+        comments {
+          id
+          content
         }
       }
     }

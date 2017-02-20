@@ -7,7 +7,6 @@ let query = /* GraphQL */`
       name
       url
       updatedAt
-      comments
       labels {
         name
         color
@@ -17,6 +16,10 @@ let query = /* GraphQL */`
         username
         fullName
         avatarHash
+      }
+      comments {
+        id
+        content
       }
     }
   }
