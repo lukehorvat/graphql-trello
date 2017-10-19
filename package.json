@@ -1,6 +1,6 @@
 {
   "name": "graphql-trello",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "GraphQL interface to Trello's API.",
   "author": "Luke Horvat",
   "license": "MIT",
